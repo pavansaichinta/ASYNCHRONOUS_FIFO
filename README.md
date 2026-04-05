@@ -1,6 +1,6 @@
 # ASYNCHRONOUS_FIFO
 ProjectView--  https://www.edaplayground.com/x/BqSK
-## Repository Description: Asynchronous FIFO (Dual-Clock) in Verilog
+## Asynchronous FIFO (Dual-Clock) in Verilog
 
 This repository contains a robust, synthesized-ready implementation of an **Asynchronous FIFO** (First-In, First-Out) memory buffer. This design is specifically engineered for data transfer between two different clock domains (**Clock Domain Crossing**), ensuring data integrity and preventing metastability using Gray code pointer synchronization.
 
@@ -49,14 +49,5 @@ The provided testbench performs the following sequence:
 3.  **Synchronization Wait:** Accounts for the 2-cycle latency of the 2-FF synchronizers.
 4.  **Burst Read:** Reads data until the `empty` flag is asserted.
 
-### How to Run (Icarus Verilog):
-```bash
-# Compile
-iverilog -o fifo_sim async_fifo.v async_fifo_tb.v
-
-# Run simulation
-vvp fifo_sim
-
-# View Waveforms
 gtkwave fifo_waves.vcd
 
