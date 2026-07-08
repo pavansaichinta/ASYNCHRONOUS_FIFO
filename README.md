@@ -1,5 +1,3 @@
-# ASYNCHRONOUS_FIFO
-Project View--  https://www.edaplayground.com/x/BqSK
 ## Asynchronous FIFO (Dual-Clock) in Verilog
 
 This repository contains a robust, synthesized-ready implementation of an **Asynchronous FIFO** (First-In, First-Out) memory buffer. This design is specifically engineered for data transfer between two different clock domains (**Clock Domain Crossing**), ensuring data integrity and preventing metastability using Gray code pointer synchronization.
